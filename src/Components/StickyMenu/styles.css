@@ -4,3 +4,14 @@
   padding-left: 64px;
   padding-right: 78px;
 }
+
+@media screen and (max-width: 480px) {
+  .root {
+    height: 50px;
+    padding-left: 18px;
+    padding-right: 13px;
+  }
+  .root img {
+    height: 40%;
+  }
+}
