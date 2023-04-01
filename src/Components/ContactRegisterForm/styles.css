@@ -1,0 +1,20 @@
+.ContactRegisterForm {
+  background: #EBF6FF;
+  padding: 300px 0;
+}
+
+.ContactRegisterForm-image-container {
+  margin-left: -285px;
+}
+
+
+/* lg */
+@media screen and (max-width: 992px) {
+}
+
+/* sm */
+@media screen and (max-width: 576px) {
+  .ContactRegisterForm {
+    padding: 100px 0;
+  }
+}
