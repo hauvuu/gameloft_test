@@ -1,0 +1,173 @@
+.Banner-root {
+  background-image: url(/public/static/images/banner_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  /* variable */
+  --Banner-store-height: 79px;
+  --Banner-store-height-lg: 130px;
+  --Banner-store-height-sm: 208px;
+}
+
+.Banner-product {
+  height: calc(100vh - var(--Banner-store-height));
+}
+
+.Banner-product-title {
+  width: auto;
+  height: auto;
+  min-height: 45px;
+  font-family: "montserrat";
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+  font-style: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Banner-product-racing-title {
+  width: auto;
+  height: 13px;
+  font-family: "montserrat";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  font-style: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Banner-product-description {
+  max-width: 596px;
+  width: auto;
+  height: 87px;
+  font-family: "montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.Banner-store {
+  width: 100%;
+  background: #d8edff;
+}
+
+.Banner-store-container {
+  height: var(--Banner-store-height);
+}
+
+.Banner-store-fixed-height {
+  height: var(--Banner-store-height);
+}
+
+.Banner-store-title h3 {
+  font-family: "montserrat";
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  color: #2699fb;
+  margin: 0;
+}
+
+.Banner-store-btns-desktop img {
+  cursor: pointer;
+}
+
+.Banner-store-btns-mobile {
+  display: none;
+}
+
+.Banner-store-btns-mobile img {
+  cursor: pointer;
+}
+
+.Banner-action {
+  position: absolute;
+  top: 80%;
+  left: 97%;
+}
+
+.Banner-action img {
+  cursor: pointer;
+}
+
+/* lg */
+@media screen and (max-width: 992px) {
+  .Banner-product {
+    height: calc(100vh - var(--Banner-store-height-lg));
+  }
+
+  .Banner-store-fixed-height {
+    height: calc(var(--Banner-store-height-lg) - 60px);
+  }
+
+  .Banner-store-title {
+    height: 60px;
+  }
+
+  .Banner-store-btns-desktop {
+    display: block !important;
+    text-align: start !important;
+  }
+
+  .Banner-action {
+    top: 70%;
+    left: 93%;
+  }
+}
+
+/* sm */
+@media screen and (max-width: 576px) {
+  .Banner-product {
+    height: calc(100vh - var(--Banner-store-height-sm));
+  }
+
+  .Banner-product-title {
+    max-width: 360px;
+  }
+
+  .Banner-product-description {
+    max-width: 270px;
+    height: 55px;
+    font-family: "montserrat";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+
+  .Banner-store-title {
+    height: 60px;
+  }
+
+  .Banner-store-title h3 {
+    font-size: 25px;
+  }
+
+  .Banner-store-btns-mobile {
+    height: calc(var(--Banner-store-height-sm) - 60px);
+  }
+
+  .Banner-store-btns-desktop {
+    display: none !important;
+  }
+
+  .Banner-store-btns-mobile {
+    display: block;
+  }
+
+  .Banner-action {
+    top: 47%;
+    left: 86%;
+  }
+}

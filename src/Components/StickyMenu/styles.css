@@ -1,17 +1,17 @@
-.root {
+.StickyMenu-root {
   height: 76px;
   background: #FFFFFF;
   padding-left: 64px;
   padding-right: 78px;
 }
 
-@media screen and (max-width: 480px) {
-  .root {
+@media screen and (max-width: 576px) {
+  .StickyMenu-root {
     height: 50px;
     padding-left: 18px;
     padding-right: 13px;
   }
-  .root img {
+  .StickyMenu-root img {
     height: 40%;
   }
 }
