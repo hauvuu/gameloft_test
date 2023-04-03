@@ -1,75 +1,73 @@
 .ContactRegisterForm-Form {
   width: 251px;
   text-align: left;
-
-  --text-color: #2699FB;
 }
 
 .ContactRegisterForm-Form h3 {
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   font-size: 25px;
   font-weight: bold;
   line-height: 25px;
   text-align: left;
-  color: var(--text-color);
+  color: var(--primary-color);
   margin-bottom: 8px;
 }
 
 .ContactRegisterForm-Form p {
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
   text-align: left;
-  color: var(--text-color);
+  color: var(--primary-color);
   margin-bottom: 25px;
 }
 
 .ContactRegisterForm-Form label {
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
   text-align: left;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .ContactRegisterForm-Form-fields-no-error {
   width: 100%;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--primary-color);
   border-radius: 3px;
   background: transparent;
   font-size: 12px;
   font-weight: 400;
-  color: var(--text-color);
+  color: var(--primary-color);
   padding: 5px;
   margin-bottom: 9px;
 }
 
 .ContactRegisterForm-Form-fields-error {
   width: 100%;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--primary-color);
   border-radius: 3px;
   background: transparent;
   font-size: 12px;
-  color: var(--text-color);
+  color: var(--primary-color);
   padding: 5px;
   margin-bottom: 2px;
 }
 
 .ContactRegisterForm-Form-fields-no-error::placeholder {
-  color: var(--text-color);
+  color: var(--primary-color);
   opacity: 1; /* Firefox */
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   font-size: 12px;
   font-weight: 400;
   text-align: left;
 }
 
 .ContactRegisterForm-Form-fields-error::placeholder {
-  color: var(--text-color);
+  color: var(--primary-color);
   opacity: 1; /* Firefox */
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   font-size: 12px;
   font-weight: 400;
   text-align: left;
@@ -85,16 +83,16 @@
 
 .ContactRegisterForm-Form-checkbox {
   background: transparent;
-  border: var(--text-color);
+  border: var(--primary-color);
 }
 
 .ContactRegisterForm-Form-submit {
   width: 100px;
   height: 30px;
   margin: 10px 0 0 80px;
-  border: 1px var(--text-color) solid !important;
+  border: 1px var(--primary-color) solid !important;
   border-radius: 3px;
   background-color: transparent;
-  color: var(--text-color);
+  color: var(--primary-color);
   font-size: 10px;
 }

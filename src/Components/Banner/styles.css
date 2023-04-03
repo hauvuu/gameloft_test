@@ -19,34 +19,34 @@
   width: auto;
   height: auto;
   min-height: 45px;
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
   text-align: left;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .Banner-product-racing-title {
   width: auto;
   height: 13px;
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   font-size: 11px;
   font-weight: 500;
   line-height: 11px;
   text-align: left;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .Banner-product-description {
   max-width: 596px;
   width: auto;
   height: 87px;
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   font-size: 20px;
   font-weight: 400;
   text-align: left;
-  color: #ffffff;
+  color: var(--white-color);
   overflow: hidden;
   text-overflow: clip;
 }
@@ -65,7 +65,7 @@
 }
 
 .Banner-store-title h3 {
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   font-size: 20px;
   font-weight: bold;
   color: #2699fb;
@@ -132,11 +132,11 @@
   .Banner-product-description {
     max-width: 270px;
     height: 55px;
-    font-family: "montserrat";
+    font-family: var(--primary-font);
     font-size: 12px;
     font-weight: 400;
     text-align: left;
-    color: #ffffff;
+    color: var(--white-color);
     overflow: hidden;
     text-overflow: clip;
   }

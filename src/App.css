@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+
+  --primary-color: #2699FB;
+  --secondary-color: #C4E4FF;
+  --white-color: #FFFFFF;
+
+  --primary-font: "montserrat";
 }
 
 .App-logo {
