@@ -1,0 +1,86 @@
+.Footer {
+  --text-color: #FFFFFF;
+  --background-color: #2699FB;
+
+  background: var(--background-color);
+}
+
+.Footer p, h3 {
+  font-family: "montserrat";
+  line-height: 1.5;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.Footer-desktop-contents {
+  text-align: start;
+  padding: 120px 0;
+}
+
+.Footer-desktop-contents h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.Footer-desktop-contents p {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.Footer-desktop-contents-Logo {
+  object-fit: none;
+  width: 355px;
+}
+
+.Footer-desktop-contents-language {
+  height: 50px;
+  width: 160px;
+  padding: 10px;
+  background: var(--text-color);
+  color: var(--background-color);
+  font-weight: bold;
+}
+
+.Footer-desktop-copyright {
+  border-top: 3px solid var(--text-color);
+  padding: 20px 0;
+}
+
+.Footer-desktop-copyright p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.Footer-mobile-social {
+  background: #C4E4FF;
+  padding: 15px 0;
+}
+
+.Footer-mobile-social h3 {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--background-color);
+}
+
+.Footer-mobile-contents p {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 2;
+}
+
+.Footer-mobile-copyright p {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* lg */
+@media screen and (max-width: 992px) {
+}
+
+/* sm */
+@media screen and (max-width: 576px) {
+}

@@ -10,7 +10,6 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 25px;
-  font-style: normal;
   text-align: left;
   color: var(--text-color);
   margin-bottom: 8px;
@@ -19,9 +18,8 @@
 .ContactRegisterForm-Form p {
   font-family: "montserrat";
   font-size: 12px;
-  font-weight: 400;
   line-height: 12px;
-  font-style: bold;
+  font-weight: 400;
   text-align: left;
   color: var(--text-color);
   margin-bottom: 25px;
@@ -30,9 +28,8 @@
 .ContactRegisterForm-Form label {
   font-family: "montserrat";
   font-size: 10px;
-  font-weight: 400;
   line-height: 10px;
-  font-style: normal;
+  font-weight: 400;
   text-align: left;
   color: var(--text-color);
 }
@@ -43,7 +40,7 @@
   border-radius: 3px;
   background: transparent;
   font-size: 12px;
-  font-style: bold;
+  font-weight: 400;
   color: var(--text-color);
   padding: 5px;
   margin-bottom: 9px;
@@ -55,7 +52,6 @@
   border-radius: 3px;
   background: transparent;
   font-size: 12px;
-  font-style: bold;
   color: var(--text-color);
   padding: 5px;
   margin-bottom: 2px;
@@ -66,7 +62,7 @@
   opacity: 1; /* Firefox */
   font-family: "montserrat";
   font-size: 12px;
-  font-style: bold;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -75,7 +71,7 @@
   opacity: 1; /* Firefox */
   font-family: "montserrat";
   font-size: 12px;
-  font-style: bold;
+  font-weight: 400;
   text-align: left;
 }
 

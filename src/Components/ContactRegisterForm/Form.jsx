@@ -107,7 +107,7 @@ const Form = () => {
                 value={checkbox.isEnoughAge}
                 onClick={() => setCheckbox({...checkbox, isEnoughAge: !checkbox.isEnoughAge})}
               />
-              <span for="vehicle1"> By signing up, I confirm that I am 13 years old or older. I agree to the Gameloft Terms and Conditions and I have read the Privacy Policy.</span>
+              <span for="enoughAge"> By signing up, I confirm that I am 13 years old or older. I agree to the Gameloft Terms and Conditions and I have read the Privacy Policy.</span>
             </label>
             <label className='d-flex align-items-start'>
               <input
@@ -117,7 +117,7 @@ const Form = () => {
                 value={checkbox.isAgree}
                 onClick={() => setCheckbox({...checkbox, isAgree: !checkbox.isAgree})}
               />
-              <span for="vehicle1"> I agree to receive promotional offers relating to all Gameloft games and services.</span>
+              <span for="agree"> I agree to receive promotional offers relating to all Gameloft games and services.</span>
             </label>
             <button className='ContactRegisterForm-Form-submit' type="submit" disabled={isSubmitting || !checkbox.isEnoughAge || !checkbox.isAgree}>
               Button
