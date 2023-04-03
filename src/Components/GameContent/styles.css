@@ -1,0 +1,104 @@
+.GameContent {
+  margin: 200px 0 100px 0;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.GameContent h2 {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.GameContent p {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 85px;
+}
+
+.GameContent h3 {
+  background: blue;
+  color: #fff;
+  font-size: 36px;
+  line-height: 300px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.GameContent-Slider {
+  margin-bottom: 105px;
+  overflow: hidden;
+}
+
+.GameContent-Slider .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.GameContent-flipX {
+  transform: scaleX(-1);
+}
+
+.GameContent-paging {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* sm */
+@media screen and (max-width: 768px) {
+  .GameContent {
+    margin: 50px 0 50px 0;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+  }
+
+  .GameContent h2 {
+    font-size: 25px;
+    line-height: 1;
+  }
+  
+  .GameContent p {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+
+  .GameContent-Slider {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .GameContent-Slider .slick-center .GameContentItem {
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .GameContent-Slider .slick-center .GameContentItem {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .GameContent-Slider .slick-center .GameContentItem {
+    height: 130px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .GameContent-Slider .slick-center .GameContentItem {
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .GameContent-Slider .slick-center .GameContentItem {
+    height: 380px;
+  }
+}

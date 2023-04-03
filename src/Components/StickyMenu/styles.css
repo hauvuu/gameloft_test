@@ -1,6 +1,6 @@
 .StickyMenu-root {
   height: 76px;
-  background: #FFFFFF;
+  background: var(--white-color);
   padding-left: 64px;
   padding-right: 78px;
 }

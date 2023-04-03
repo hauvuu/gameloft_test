@@ -1,14 +1,11 @@
 .Footer {
-  --text-color: #FFFFFF;
-  --background-color: #2699FB;
-
-  background: var(--background-color);
+  background: var(--primary-color);
 }
 
 .Footer p, h3 {
-  font-family: "montserrat";
+  font-family: var(--primary-font);
   line-height: 1.5;
-  color: var(--text-color);
+  color: var(--white-color);
   margin: 0;
 }
 
@@ -38,13 +35,13 @@
   height: 50px;
   width: 160px;
   padding: 10px;
-  background: var(--text-color);
-  color: var(--background-color);
+  background: var(--white-color);
+  color: var(--primary-color);
   font-weight: bold;
 }
 
 .Footer-desktop-copyright {
-  border-top: 3px solid var(--text-color);
+  border-top: 3px solid var(--white-color);
   padding: 20px 0;
 }
 
@@ -61,7 +58,7 @@
 .Footer-mobile-social h3 {
   font-size: 12px;
   font-weight: bold;
-  color: var(--background-color);
+  color: var(--primary-color);
 }
 
 .Footer-mobile-contents p {

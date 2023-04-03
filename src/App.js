@@ -3,6 +3,8 @@ import StickyMenu from './Components/StickyMenu';
 import Banner from './Components/Banner';
 import ContactRegisterForm from './Components/ContactRegisterForm';
 import Footer from './Components/Footer';
+import GameContent from './Components/GameContent';
+// import SampleSlick from './Components/SampleSlick';
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <StickyMenu />
       <Banner />
       <ContactRegisterForm />
+      <GameContent />
       <Footer />
     </div>
   );
