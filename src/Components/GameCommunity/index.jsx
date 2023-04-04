@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from "react-slick";
@@ -40,17 +40,19 @@ const gamesList = [
 ];
 
 const postsList = [
-  {index: 0, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
-  {index: 1, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
-  {index: 2, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
-  {index: 3, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
-  {index: 4, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
-  {index: 5, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
-  {index: 6, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
-  {index: 7, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
-  {index: 8, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
-  {index: 9, img: '', content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 0, img: '', content: '1 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 1, img: '', content: '2 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 2, img: '', content: '3 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 3, img: '', content: '4 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 4, img: '', content: '5 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 5, img: '', content: '6 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 6, img: '', content: '7 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 7, img: '', content: '8 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 8, img: '', content: '9 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
+  {index: 9, img: '', content: '10 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...'},
 ];
+
+const NUMBER_OF_LOADING_POST = 3
 
 const GameCommunity = () => {
 
@@ -58,6 +60,21 @@ const GameCommunity = () => {
   const postRef = useRef(null);
   const [currentGame, setCurrentGame] = useState(0);
   const [currentPost, setCurrentPost] = useState(0);
+  const [MobilePostsList, setMobilePostList] = useState([]);
+
+  useEffect(() => {
+    const array = [];
+    if (postsList.length >= NUMBER_OF_LOADING_POST) {
+      for (let i = 0; i < NUMBER_OF_LOADING_POST; i++) {
+        array.push(postsList[i]);
+      }
+    } else {
+      for (let i = 0; i < postsList.length; i++) {
+        array.push(postsList[i]);
+      }
+    }
+    setMobilePostList(array);
+  }, []);
 
   const handlePrevGame = () => {
     if (gameRef.current) gameRef.current.slickPrev();
@@ -77,6 +94,21 @@ const GameCommunity = () => {
 
   const handleClickGame = (index) => {
     setCurrentGame(index)
+  }
+
+  const handleClickLoadPosts = () => {
+    const arr = postsList.filter(item => !MobilePostsList.includes(item));
+    const array = [...MobilePostsList];
+    if (arr.length >= NUMBER_OF_LOADING_POST) {
+      for (let i = 0; i < NUMBER_OF_LOADING_POST; i++) {
+        array.push(arr[i]);
+      }
+    } else {
+      for (let i = 0; i < arr.length; i++) {
+        array.push(arr[i]);
+      }
+    }
+    setMobilePostList(array);
   }
 
   const showGamesList = () => (
@@ -128,7 +160,7 @@ const GameCommunity = () => {
     </div>
   )
 
-  const showPostsList = () => {
+  const showDesktopPostsList = () => {
     return (
       <div className='GameCommunity-Slider-Post d-none d-sm-block'>
         <Slider {...postSettings}
@@ -170,6 +202,24 @@ const GameCommunity = () => {
     )
   }
 
+  const showMobilePostsList = () => (
+    <div className='d-block d-sm-none position-relative'>
+      <div className='container'>
+        {MobilePostsList.map(item => (<Post key={item.index} img={item.img} content={item.content} />))}
+      </div>
+      {postsList.length > MobilePostsList.length && 
+        <div className='GameCommunity-Mobile-Post-LoadMore d-flex justify-content-center align-items-end'>
+          <div
+            className='GameCommunity-Mobile-Post-LoadMore-Btn d-flex justify-content-center align-items-center cursor-pointer'
+            onClick={() => handleClickLoadPosts()}
+          >
+            More
+          </div>
+        </div>
+      }
+    </div>
+  )
+
   return (
     <div className='GameCommunity'>
       <div className='container text-start'>
@@ -191,7 +241,8 @@ const GameCommunity = () => {
           <img className='cursor-pointer' src='static/icons/search_btn_icon.png' alt='search' />
         </div>
       </div>
-      {showPostsList()}
+      {showDesktopPostsList()}
+      {showMobilePostsList()}
     </div>
   );
 };
