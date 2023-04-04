@@ -4,6 +4,7 @@ import Banner from './Components/Banner';
 import ContactRegisterForm from './Components/ContactRegisterForm';
 import Footer from './Components/Footer';
 import GameContent from './Components/GameContent';
+import EventPromotion from './Components/EventPromotion';
 // import SampleSlick from './Components/SampleSlick';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <StickyMenu />
       <Banner />
       <ContactRegisterForm />
+      <EventPromotion />
       <GameContent />
       <Footer />
     </div>

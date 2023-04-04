@@ -95,4 +95,12 @@
   background-color: transparent;
   color: var(--primary-color);
   font-size: 10px;
+  transition: 0.3s;
+}
+
+.ContactRegisterForm-Form-submit:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: 0.3s;
 }
