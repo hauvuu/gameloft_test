@@ -23,13 +23,6 @@ const Banner = () => {
 
   return (
     <div className='Banner-root'>
-      <div className='Banner-action'>
-        <img src='static/icons/share_icon.png' alt='share' />
-        <br />
-        <img className='m-1' src='static/icons/mail_icon.png' alt='mail' />
-        <br />
-        <img className='m-1' src='static/icons/support_icon.png' alt='support' />
-      </div>
       <div className='Banner-product d-flex align-items-end justify-content-start container'>
         <div className='text-start'>
           <h1 className='Banner-product-title mb-3'>Gameloft game</h1>

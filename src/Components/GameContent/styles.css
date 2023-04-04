@@ -1,7 +1,10 @@
 .GameContent {
-  margin: 200px 0 100px 0;
+  min-height: 100vh;
+  padding-top: calc((100vh - 760px) / 2);
   font-family: var(--primary-font);
   color: var(--primary-color);
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .GameContent h2 {
@@ -9,6 +12,7 @@
   font-weight: bold;
   line-height: 1.5;
   text-align: left;
+  margin-top: 30px;
 }
 
 .GameContent p {
@@ -16,7 +20,7 @@
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
-  margin-bottom: 85px;
+  margin-bottom: 40px;
 }
 
 .GameContent h3 {
@@ -48,7 +52,6 @@
 /* sm */
 @media screen and (max-width: 768px) {
   .GameContent {
-    margin: 50px 0 50px 0;
     font-family: var(--primary-font);
     color: var(--primary-color);
   }

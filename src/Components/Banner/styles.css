@@ -84,16 +84,6 @@
   cursor: pointer;
 }
 
-.Banner-action {
-  position: absolute;
-  top: 80%;
-  left: 97%;
-}
-
-.Banner-action img {
-  cursor: pointer;
-}
-
 /* lg */
 @media screen and (max-width: 992px) {
   .Banner-product {
@@ -111,11 +101,6 @@
   .Banner-store-btns-desktop {
     display: block !important;
     text-align: start !important;
-  }
-
-  .Banner-action {
-    top: 70%;
-    left: 93%;
   }
 }
 
@@ -159,10 +144,5 @@
 
   .Banner-store-btns-mobile {
     display: block;
-  }
-
-  .Banner-action {
-    top: 47%;
-    left: 86%;
   }
 }

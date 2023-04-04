@@ -1,12 +1,15 @@
 .GameCommunity {
+  min-height: 100vh;
+  padding-top: calc((100vh - 850px) / 2);
   color: var(--primary-color);
   font-family: var(--primary-font);
-  padding: 60px 0 30px 0;
+  overflow: hidden;
 }
 
 .GameCommunity h2 {
   font-size: 45px;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 .GameCommunity h3 {
@@ -92,4 +95,39 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+/* lg */
+@media screen and (max-width: 992px) {
+}
+
+/* sm */
+@media screen and (max-width: 576px) {
+  .GameCommunity h2 {
+    font-size: 25px;
+  }
+
+  .GameCommunity-Slider-Game-item {
+    font-size: 13px;
+  }
+
+  .GameCommunity-Slider-Game-item-seleted {
+    border: 1px solid var(--primary-color);
+    padding: 3px;
+  }
+  
+  .GameCommunity-Slider-Game-item img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .GameCommunity-Slider-Game-arrow-left {
+    height: 90px;
+    padding: 25px 15px 35px 15px;
+  }
+  
+  .GameCommunity-Slider-Game-arrow-right {
+    height: 90px;
+    padding: 25px 15px 35px 15px;
+  }
 }

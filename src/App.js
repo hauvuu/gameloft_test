@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 import GameContent from './Components/GameContent';
 import EventPromotion from './Components/EventPromotion';
 import GameCommunity from './Components/GameCommunity';
-// import SampleSlick from './Components/SampleSlick';
+import StickySocial from './Components/StickySocial';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
       <EventPromotion />
       <GameContent />
       <Footer />
+      <StickySocial />
     </div>
   );
 }

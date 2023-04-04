@@ -12,6 +12,7 @@
 .Footer-desktop-contents {
   text-align: start;
   padding: 120px 0;
+  min-height: calc(100vh - 88px);
 }
 
 .Footer-desktop-contents h3 {
@@ -59,6 +60,10 @@
   font-size: 12px;
   font-weight: bold;
   color: var(--primary-color);
+}
+
+.Footer-mobile-contents {
+  min-height: calc(100vh - 188px);
 }
 
 .Footer-mobile-contents p {
