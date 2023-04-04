@@ -1,6 +1,7 @@
 .ContactRegisterForm {
   background: #EBF6FF;
-  padding: 300px 0;
+  padding-top: calc((100vh - 420px) / 2);
+  min-height: 100vh;
 }
 
 .ContactRegisterForm-image-container {

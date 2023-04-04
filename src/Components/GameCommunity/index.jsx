@@ -80,7 +80,7 @@ const GameCommunity = () => {
   }
 
   const showGamesList = () => (
-    <div className='position-relative mb-5'>
+    <div className='position-relative mb-sm-5 mb-3'>
       <img
         className='GameCommunity-Slider-Game-arrow-left'
         src='static/icons/game_list_arrow.png'
@@ -96,6 +96,13 @@ const GameCommunity = () => {
               slidesToShow: 3,
               slidesToScroll: 1
             }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1
+            }
           }
         ]}
       >
@@ -105,7 +112,7 @@ const GameCommunity = () => {
             key={item.index}
             onClick={() => handleClickGame(item.index)}
           >
-            <div className='d-flex justify-content-center mb-4'>
+            <div className='d-flex justify-content-center mb-1 mb-sm-4'>
               <img className={ currentGame === item.index && 'GameCommunity-Slider-Game-item-seleted' } src={item.img} alt='game' />
             </div>
             {item.title}
@@ -123,18 +130,25 @@ const GameCommunity = () => {
 
   const showPostsList = () => {
     return (
-      <div className='GameCommunity-Slider-Post'>
+      <div className='GameCommunity-Slider-Post d-none d-sm-block'>
         <Slider {...postSettings}
           ref={postRef}
           afterChange={index => setCurrentPost(index)}
           responsive={[
             {
-              breakpoint: 768,
+              breakpoint: 1200,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1
               }
-            }
+            },
+            {
+              breakpoint: 1400,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+              }
+            },
           ]}
         >
           {postsList.map(item => <Post key={item.index} img={item.img} content={item.content} />)}
@@ -160,19 +174,19 @@ const GameCommunity = () => {
     <div className='GameCommunity'>
       <div className='container text-start'>
         <h2 className='mb-5'>Game Community Hub</h2>
-        <h3 className='mb-4'>Live Game Updates</h3>
+        <h3 className='mb-4 d-none d-sm-block'>Live Game Updates</h3>
         {showGamesList()}
         <div className='d-flex align-items-center'>
           <h3 className='me-auto'>All Posts</h3>
-          <img className='me-sm-4 me-1 cursor-pointer' src='static/icons/twitter_icon.png' alt='twitter' />
-          <img className='me-sm-4 me-1 cursor-pointer' src='static/icons/instagram_icon.png' alt='instagram' />
-          <img className='me-sm-4 me-1 cursor-pointer' src='static/icons/facebook_icon.png' alt='facebook' />
-          <div className='GameCommunity-search-post d-none d-sm-flex'>
+          <img className='me-sm-4 me-3 cursor-pointer' src='static/icons/twitter_icon.png' alt='twitter' />
+          <img className='me-sm-4 me-3 cursor-pointer' src='static/icons/instagram_icon.png' alt='instagram' />
+          <img className='me-sm-4 cursor-pointer' src='static/icons/facebook_icon.png' alt='facebook' />
+          <div className='GameCommunity-search-post d-none d-md-flex'>
             <input type='text' placeholder='Search' />
             <img className='cursor-pointer' src='static/icons/search_btn_icon.png' alt='search' />
           </div>
         </div>
-        <div className='GameCommunity-search-post d-flex d-sm-none'>
+        <div className='GameCommunity-search-post d-flex d-md-none mt-2'>
           <input type='text' placeholder='Search' />
           <img className='cursor-pointer' src='static/icons/search_btn_icon.png' alt='search' />
         </div>
