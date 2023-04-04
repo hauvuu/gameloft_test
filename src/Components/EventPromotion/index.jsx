@@ -107,7 +107,7 @@ const EventPromotion = () => {
           } else {
             return (
               <div
-                className='EventPromotion-CardNumberItem-noSelected d-flex justify-content-center align-items-center me-1'
+                className='EventPromotion-CardNumberItem-noSelected d-flex justify-content-center align-items-center me-1 cursor-pointer'
                 onClick={() => handleClickSlickGoTo(item.index)}
               >
                 {item.index + 1}

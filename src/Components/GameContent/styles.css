@@ -39,10 +39,6 @@
   align-items: center;
 }
 
-.GameContent-flipX {
-  transform: scaleX(-1);
-}
-
 .GameContent-paging {
   font-size: 20px;
   font-weight: 400;

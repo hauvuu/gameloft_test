@@ -1,0 +1,35 @@
+.Post {
+  height: 330px;
+  background: var(--secondary-color);
+  margin: 0 20px;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  position: relative;
+}
+
+.Post-img {
+  height: 50%;
+}
+
+.Post-content {
+  height: 50%;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.Post-facebook-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 30px;
+}
+
+.Post-share-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  cursor: pointer;
+}
