@@ -20,7 +20,7 @@ const GameContentItem = props => {
   );
 };
 
-GameContentItem.defautProps = {
+GameContentItem.defaultProps = {
   key: 0,
   img: '',
   downloadSrc: ''

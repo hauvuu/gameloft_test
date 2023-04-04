@@ -5,6 +5,7 @@ import ContactRegisterForm from './Components/ContactRegisterForm';
 import Footer from './Components/Footer';
 import GameContent from './Components/GameContent';
 import EventPromotion from './Components/EventPromotion';
+import GameCommunity from './Components/GameCommunity';
 // import SampleSlick from './Components/SampleSlick';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <StickyMenu />
       <Banner />
       <ContactRegisterForm />
+      <GameCommunity />
       <EventPromotion />
       <GameContent />
       <Footer />

@@ -42,3 +42,11 @@
     transform: rotate(360deg);
   }
 }
+
+.flipX {
+  transform: scaleX(-1) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

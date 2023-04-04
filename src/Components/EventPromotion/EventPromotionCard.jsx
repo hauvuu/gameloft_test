@@ -18,16 +18,16 @@ const EventPromotionCard = props => {
         <p className='EventPromotionCard-content-title'>{title}</p>
         <hr />
         <p className='EventPromotionCard-content-description'>{description}</p>
-        <div className='EventPromotionCard-content-learnmore d-none justify-content-center align-items-center'>
+        <div className='EventPromotionCard-content-learnmore d-none justify-content-center align-items-center cursor-pointer'>
           Read more
         </div>
-        <img className='EventPromotionCard-content-share' src='static/icons/share_icons.png' alt='share' />
+        <img className='EventPromotionCard-content-share cursor-pointer' src='static/icons/share_icons.png' alt='share' />
       </div>
     </div>
   );
 };
 
-EventPromotionCard.defautProps = {
+EventPromotionCard.defaultProps = {
   key: 0,
   img: '',
   title: 'Short title here',

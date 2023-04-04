@@ -70,14 +70,14 @@ const GameContent = () => {
       </div>
       {showGameContentList()}
       <img
-        className='GameContent-flipX me-3'
+        className='flipX me-3 cursor-pointer'
         src='static/icons/GameContent_arrow.png'
         alt='GameContent_arrow'
         onClick={() => handlePrev()}
       />
       <span className='GameContent-paging'><b>{currentItem + 1}</b> / {contentList.length}</span>
       <img
-        className='ms-3'
+        className='ms-3 cursor-pointer'
         src='static/icons/GameContent_arrow.png'
         alt='GameContent_arrow'
         onClick={() => handleNext()}
