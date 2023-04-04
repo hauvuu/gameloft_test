@@ -1,0 +1,163 @@
+.EventPromotionCard {
+  height: 100%;
+  padding: 40px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, var(--primary-color) , #0b3254);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 20px;
+  transition: 0.3s;
+  aspect-ratio: 40 / 53;
+  position: relative;
+}
+
+.EventPromotionCard-image {
+  height: 50%;
+  transition: 0.3s;
+}
+
+.EventPromotionCard-content {
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transition: 0.3s;
+}
+
+.EventPromotionCard-content hr {
+  border-top: 3px solid var(--white-color);
+  opacity: 1;
+  width: 30%;
+  display: none;
+  transition: 0.3s;
+}
+
+.EventPromotionCard-content-title {
+  font-size: 25px !important;
+  width: auto;
+  font-weight: bold !important;
+  color: var(--white-color);
+  transition: 0.3s;
+  margin: 0 !important;
+}
+
+.EventPromotionCard-content-description {
+  display: none;
+  transition: 0.3;
+  font-size: 15px !important;
+  font-weight: 400;
+  text-align: left;
+  color: var(--white-color);
+  margin: 0 !important;
+}
+
+.EventPromotionCard-content-learnmore {
+  display: none;
+  font-size: 18px !important;
+  width: auto;
+  font-weight: bold !important;
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+  padding: 10px 0;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+}
+
+.EventPromotionCard-content-share {
+  display: none !important;
+  transition: 0.3s;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* HOVER */
+
+.EventPromotionCard:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.EventPromotionCard:hover hr {
+  display: block;
+  transition: 0.3s;
+}
+
+.EventPromotionCard:hover .EventPromotionCard-image {
+  display: none !important;
+  transition: 0.3s;
+}
+
+.EventPromotionCard:hover .EventPromotionCard-content {
+  display: block;
+  height: auto;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.EventPromotionCard:hover .EventPromotionCard-content-title {
+  font-size: 20px !important;
+  transition: 0.3s;
+}
+
+.EventPromotionCard:hover .EventPromotionCard-content-description {
+  display: block;
+  transition: 0.3s;
+}
+
+.EventPromotionCard:hover .EventPromotionCard-content-learnmore {
+  display: flex !important;
+  transition: 0.3s;
+}
+
+.EventPromotionCard:hover .EventPromotionCard-content-share {
+  display: block !important;
+  transition: 0.3s;
+}
+
+.EventPromotionCard-content-learnmore:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 430px) {
+  .EventPromotionCard {
+    width: 250px;
+    padding: 30px;
+  }
+
+  .EventPromotionCard-content-title {
+    font-size: 20px !important;
+  }
+
+  .EventPromotionCard-content-description {
+    font-size: 12px !important;
+    overflow: hidden;
+  }
+  
+  .EventPromotionCard-content-learnmore {
+    font-size: 14px !important;
+    padding: 7px 0;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+  }
+
+  .EventPromotionCard-content-share {
+    height: 30px;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .EventPromotionCard:hover {
+    box-shadow: 0px 0px 10px 5px #0b3254;
+    z-index: 10;
+  }
+}

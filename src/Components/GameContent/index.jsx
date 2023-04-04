@@ -42,29 +42,33 @@ const GameContent = () => {
     if (slickRef.current) slickRef.current.slickPrev();
   };
 
+  const showGameContentList = () => (
+    <Slider {...settings}
+      ref={slickRef}
+      afterChange={index => setCurrentItem(index)}
+      responsive={[
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]}
+    >
+      {contentList.map(item => (
+        <GameContentItem key={item.index} img={item.img} downloadSrc={item.downloadSrc} />
+      ))}
+    </Slider>
+  )
+
   return (
     <div className='GameContent'>
       <div className='container text-start'>
         <h2>Exclusive Game Content</h2>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.</p>
       </div>
-      <Slider {...settings}
-        ref={slickRef}
-        afterChange={index => setCurrentItem(index)}
-        responsive={[
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]}
-      >
-        {contentList.map(item => (
-          <GameContentItem key={item.index} img={item.img} downloadSrc={item.downloadSrc} />
-        ))}
-      </Slider>
+      {showGameContentList()}
       <img
         className='GameContent-flipX me-3'
         src='static/icons/GameContent_arrow.png'
