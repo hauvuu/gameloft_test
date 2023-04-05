@@ -2,6 +2,7 @@
   background: #EBF6FF;
   padding-top: calc((100vh - 420px) / 2);
   min-height: 100vh;
+  scroll-snap-align: start;
 }
 
 .ContactRegisterForm-image-container {

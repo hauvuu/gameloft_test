@@ -1,4 +1,5 @@
 .Banner-root {
+  scroll-snap-align: start;
   background-image: url(/public/static/images/banner_background.png);
   background-size: cover;
   background-repeat: no-repeat;
