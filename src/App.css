@@ -6,6 +6,10 @@
   --white-color: #FFFFFF;
 
   --primary-font: "montserrat";
+  
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .App-logo {

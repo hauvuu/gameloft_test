@@ -17,16 +17,16 @@ const settings = {
 };
 
 const contentList = [
-  {index: 0, img: '', downloadSrc: ''},
-  {index: 1, img: '', downloadSrc: ''},
-  {index: 2, img: '', downloadSrc: ''},
-  {index: 3, img: '', downloadSrc: ''},
-  {index: 4, img: '', downloadSrc: ''},
-  {index: 5, img: '', downloadSrc: ''},
-  {index: 6, img: '', downloadSrc: ''},
-  {index: 7, img: '', downloadSrc: ''},
-  {index: 8, img: '', downloadSrc: ''},
-  {index: 9, img: '', downloadSrc: ''},
+  {index: 0, img: 'static/images/sample_img_1.jpg'},
+  {index: 1, img: 'static/images/sample_img_2.jpeg'},
+  {index: 2, img: 'static/images/sample_img_1.jpg'},
+  {index: 3, img: 'static/images/sample_img_2.jpeg'},
+  {index: 4, img: 'static/images/sample_img_1.jpg'},
+  {index: 5, img: 'static/images/sample_img_2.jpeg'},
+  {index: 6, img: 'static/images/sample_img_1.jpg'},
+  {index: 7, img: 'static/images/sample_img_2.jpeg'},
+  {index: 8, img: 'static/images/sample_img_1.jpg'},
+  {index: 9, img: 'static/images/sample_img_2.jpeg'},
 ];
 
 const GameContent = () => {
@@ -57,7 +57,7 @@ const GameContent = () => {
       ]}
     >
       {contentList.map(item => (
-        <GameContentItem key={item.index} img={item.img} downloadSrc={item.downloadSrc} />
+        <GameContentItem key={item.index} img={item.img}/>
       ))}
     </Slider>
   )

@@ -14,8 +14,8 @@ const Post = props => {
       <div className='Post-content d-flex justify-content-start align-items-end'>
         {content}
       </div>
-      <img className='Post-facebook-logo' src='static/icons/facebook_post_icon.png' alt="facebook" />
-      <img className='Post-share-logo' src='static/icons/share_icons.png' alt="share" />
+      <img className='Post-facebook-logo' src='static/icons/facebook_post_icon.png' alt="facebook" onClick={() => window.open('https://facebook.com', '_blank')} />
+      <img className='Post-share-logo' src='static/icons/share_icons.png' alt="share" onClick={() => window.open('https://facebook.com', '_blank')} />
     </div>
   );
 };

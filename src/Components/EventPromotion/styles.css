@@ -2,6 +2,7 @@
   --progress-time: 2.4s;
 
   min-height: 100vh;
+  scroll-snap-align: start;
   padding-top: calc((100vh - 870px) / 2);
   font-family: var(--primary-font);
   color: var(--primary-color);

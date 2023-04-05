@@ -11,10 +11,10 @@ const Footer = () => {
             <img className='Footer-desktop-contents-Logo cursor-pointer' src="static/icons/Logo_Footer.png" alt="footer_logo" />
             <h3 className='mt-5 mb-3'>Follow Us</h3>
             <div className='d-flex justify-content-start align-items-start mb-4'>
-              <img className='me-3 cursor-pointer' src='static/icons/facebook_footer.png' alt='facebook' />
-              <img className='me-3 cursor-pointer' src='static/icons/linkedin_footer.png' alt='linkedin' />
-              <img className='me-3 cursor-pointer' src='static/icons/twitter_logo.png' alt='twitter' />
-              <img className='cursor-pointer' src='static/icons/youtube_logo.png' alt='youtube' />
+              <img className='me-3 cursor-pointer' src='static/icons/facebook_footer.png' alt='facebook' onClick={() => window.open('https://facebook.com', '_blank')} />
+              <img className='me-3 cursor-pointer' src='static/icons/linkedin_footer.png' alt='linkedin' onClick={() => window.open('https://linkedin.com', '_blank')} />
+              <img className='me-3 cursor-pointer' src='static/icons/twitter_logo.png' alt='twitter' onClick={() => window.open('https://twitter.com', '_blank')} />
+              <img className='cursor-pointer' src='static/icons/youtube_logo.png' alt='youtube' onClick={() => window.open('https://youtube.com', '_blank')} />
             </div>
             <select className='Footer-desktop-contents-language' name='languages'>
               <option value='en'>English</option>
